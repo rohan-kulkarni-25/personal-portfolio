@@ -1,2 +1,0 @@
-- name: Label Syncer
-  uses: micnncim/action-label-syncer@v1.3.0
