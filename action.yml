@@ -1,5 +1,9 @@
 name: Import open source standard labels
 
+name: EddieHubCommunity labels Action
+uses: EddieHubCommunity/gh-action-open-source-labels@v0.1.1
+
+
 on:
   push:
     branches: [ main ]
