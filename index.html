@@ -1,1 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohan Kulkarni | Home</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/images/myself.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+
+    <header>
+        <div class="element"></div>
+        <ul class="topnav" id="myTopnav">
+            <a href="#aboutme"><i class="bi bi-file-person"></i>About Me</a>
+            <a href="pages/achivements.html"><i class="bi bi-trophy"></i>Achievement</a>
+            <a href="pages/certificates.html"><i class="bi bi-file-code"></i>Certificates</a>
+            <a href="#getconnected"><i class="bi bi-link-45deg"></i>Get Connected</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="bi bi-list"></i>
+            </a>
+        </ul>
+    </header>
+    <section>
+        <div class="home" id="home">
+            <div class="box">
+                <img class="myself" src="assets/images/myself.png">
+                <div class="box2">
+                    <p>Hello Everyone Rohan here 👋🏻</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="aboutme" id="aboutme">
+        <div class="headline">
+            <p>About Me</p>
+        </div>
+        <div class="subheading">
+            <p>Failure will never overtake me if my determination to succeed is strong enough !</p>
+        </div>
+        <div class="intro">
+            <p>Myself Rohan Kulkarni.A First Year Student from Sinhgad Institute Of Technology And Science
+                (SITS),Pune,
+                pursuing Computer Science Engineer Degree. Currently I am learning Web-Development.I am also having
+                prior knowledge of C++ and foucsing on Java as primary language.I also like to contribute in Open
+                Source and try to give my contributions! I enjoy doing development stuffs.Also Click Photos in free
+                Time as hobby.
+            </p>
+        </div>
+
+    </section>
+    <footer>
+        <section class="getconnected" id="getconnected">
+            <div class="headline">
+                <p>Get Connected</p>
+
+            </div>
+            <div class="subheading">
+                <p>Communication - the human connection - is the key to personal and career success !</p>
+            </div>
+            <div class="socials">
+                <div class="socialbox">
+                    <img class="social" src="assets/images/github.png">
+                    <p><a href="https://github.com/rohan-kulkarni-25">Visit</a></p>
+                </div>
+                <div class="socialbox">
+                    <img class="social" src="assets/images/linkedin.png">
+                    <p><a href="https://www.linkedin.com/in/rohan-k-2502/">Visit</a></p>
+                </div>
+                <div class="socialbox">
+                    <img class="social" src="assets/images/twitter.png">
+                    <p><a href="https://twitter.com/rohan_2502">Visit</a></p>
+                </div>
+                <div class="socialbox">
+                    <img class="social" src="assets/images/instagram.png">
+                    <p><a href="https://www.instagram.com/rohan_k_2502/">Visit</a></p>
+                </div>
+            </div>
+        </section>
+
+        <div class="foot">
+            <p>| 2021 | Rohan Kulkarni | Portfolio |</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+
+</html>
