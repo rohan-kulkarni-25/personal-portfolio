@@ -35,7 +35,7 @@
   padding: 2rem;
   background-color: aliceblue;
   z-index: 999;
-  width: 100%;
+  width: 100vw;
   box-shadow: 0px 5px 10px #00000022, 0px 5px 10px #00000022;
   font-size: 2rem;
   p {
@@ -188,54 +188,3 @@
     }
   }
 }
-
-// header ul {
-//   align-items: center;
-//   display: flex;
-//   justify-content: flex-end;
-//   padding-right: 5vmax;
-//   z-index: 2;
-// }
-
-// header {
-//   font-family: "Roboto Mono", monospace;
-//   font-weight: bold;
-//   z-index: 1;
-// }
-
-// header ul a {
-//   display: flex;
-//   padding: 1vmax;
-//   font-size: 1.5vmax;
-//   text-decoration: none;
-// }
-
-// header ul a i {
-//   padding-right: 1vmin;
-//   text-decoration: none;
-// }
-
-// header ul a:hover {
-//   display: flex;
-//   padding: 1vmax;
-//   font-size: 1.5vmax;
-//   border-style: solid;
-//   border-right: 1vmin;
-//   border-left: 1vmin;
-//   border-top: 1vmin;
-//   border-color: orangered;
-//   cursor: pointer;
-// }
-
-// header ul a:visited {
-//   display: flex;
-//   /* padding: 1vw; */
-//   color: black;
-//   font-size: 3vh;
-//   /* background-color: red; */
-//   border-style: solid;
-//   border-right: 1vh;
-//   border-left: 1vh;
-//   border-color: orangered;
-//   cursor: pointer;
-// }

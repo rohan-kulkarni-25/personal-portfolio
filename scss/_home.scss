@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
 
-
 .home .box {
   margin-top: 14rem;
   margin-bottom: 4.5vmax;
@@ -107,180 +106,140 @@
 
 .getconnected {
   /* background-color: aqua; */
-  height: 60vh;
+  // height: 60vh;
   margin-top: 10vh;
   /* align-items: center; */
 }
 
 .getconnected .headline {
   font-size: 5vh;
-  display: flex;
-  border: 0ch;
-  border-bottom: 0.5vh;
-  border-style: solid;
-  left: 10%;
-  align-items: flex-start;
-  justify-content: center;
-  position: absolute;
-  left: 42%;
-  height: 6vh;
-  width: 15%;
+  width: max-content;
+  margin: 0 auto;
   border-bottom: 3px solid #000;
 }
 
 .getconnected .subheading {
-  font-size: 3vh;
-  display: flex;
+  font-size: 3.55rem;
   font-family: "Roboto Mono", monospace;
-  left: 10%;
-  align-items: flex-start;
-  justify-content: center;
-  position: absolute;
   text-align: center;
-  /* left: 10%; */
-  top: 221vh;
-  height: 6vh;
-  width: 80%;
-}
-
-.getconnected .socials .socialbox .social {
-  width: 5vw;
-  height: 5vw;
+  margin: 2rem 0;
+  padding: 0;
 }
 
 .getconnected .socials {
   display: flex;
-  padding-top: 1vh;
+  gap: 2rem;
   justify-content: center;
+  margin: 2rem 0;
 }
 
 .getconnected .socials .socialbox {
-  display: block;
-  text-align: center;
-  justify-content: center;
-  background-color: aliceblue;
-  width: 30vh;
-  height: 20vh;
-  margin: 5vh;
-  margin-top: 22vh;
-  padding: 2vh;
-  border-radius: 2vh;
-  box-shadow: 5vh 5vh rgba(68, 168, 255, 0.493);
-}
-
-.getconnected .socials .socialbox p {
-  font-family: "Roboto Mono", monospace;
-  font-weight: bolder;
-  font-size: 3vh;
-  padding: 3vh;
-}
-
-.getconnected .socials .socialbox a {
-  text-decoration: none;
-  color: #000;
-}
-
-.getconnected .socials .socialbox a:visited {
-  text-decoration: none;
-  color: #000;
-}
-
-.getconnected .socials .socialbox p:hover {
-  font-family: "Roboto Mono", monospace;
-  font-weight: bolder;
-  font-size: 5vh;
-  padding: 1vh;
-  border: 0vh;
-  border-bottom: 0.3vh;
-  border-color: orangered;
-  border-style: solid;
-  cursor: pointer;
-}
-
-.aboutme {
-  height: 100vh;
-  background-image: url(../assets/images/aboutmebg.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.aboutme .headline {
-  font-size: 7vh;
-  display: flex;
-  border: 0ch;
-  border-bottom: 0.5vh;
-  border-style: solid;
-  left: 10%;
-  align-items: flex-start;
-  justify-content: center;
-  position: absolute;
-  left: 38%;
-  margin-left: 22vw;
-  font-family: "Roboto Mono", monospace;
-  height: 8vh;
-  width: 25%;
-  border-bottom: 3px solid #000;
-  padding-top: 7vh;
-  /* background-color: rgba(255, 255, 255, 0.801); */
-  /* border-radius: 2vh; */
-  font-weight: 900;
-}
-
-.aboutme .subheading {
-  font-size: 2.3vh;
-  display: flex;
-  font-family: "Roboto Mono", monospace;
-  left: 10%;
-  align-items: flex-start;
-  justify-content: center;
-  position: absolute;
-  text-align: center;
-  /* left: 10%; */
-  top: 114vh;
-  /* display: none; */
-  height: 6vh;
-  width: 54%;
-  margin-left: 35vw;
-  background-color: #fffff0;
-  padding-top: 2vh;
-  margin-top: 3vh;
-  border-radius: 2vh;
-  font-weight: 900;
-}
-
-.aboutme .intro {
-  font-family: "Roboto Mono", monospace;
-  font-size: 4vh;
-  text-align: justify;
-  padding: 5vh;
-
-  padding-top: 25vh;
-  margin-left: 50vw;
-  /* background-color: rgba(255, 255, 255, 0.76); */
-  font-weight: 400;
-}
-
-.aboutme .intro p {
-  /* background-color: #fffff0; */
-  border-radius: 2vh;
-  width: 40vw;
-  height: 60vh;
-  font-weight: 900;
-  padding: 2vh;
-}
-
-.foot {
-  background-color: black;
-  height: 7vh;
-  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
+  transition: all 300ms ease-out;
+  padding: 1rem 2rem;
+  max-width: 20vw;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5.5px);
+  border-radius: 1rem;
+  border: 3px solid rgba(255, 255, 255, 0.18);
+}
+.getconnected .socials .socialbox .social {
+  width: 4rem;
+  height: 4rem;
+
+  @include respond($bp-smallest) {
+    width: 7rem;
+    height: 7rem;
+  }
+}
+.getconnected .socials .socialbox a:visited,
+.getconnected .socials .socialbox a:link {
+  display: none;
   font-family: "Roboto Mono", monospace;
+  font-weight: bolder;
+  font-size: 3vh;
+  text-decoration: none;
+  color: #000;
+
+  @include respond($bp-small) {
+    display: block;
+  }
+}
+.getconnected .socials .socialbox:hover {
+  transform: translateY(-0.5rem);
+}
+.getconnected .socials .socialbox:active {
+  transform: translateY(0rem);
+}
+.aboutme {
+  // min-height: 100vh;
+  background-image: url(../assets/images/aboutmebg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100vw;
+  display: block;
+  padding: 2rem;
+
+  @include respond($bp-large) {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-items: center;
+    align-content: center;
+    padding: 0;
+  }
+}
+.content {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(196, 196, 196, 0.37);
+  backdrop-filter: blur(2rem);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  @include respond($bp-large) {
+    margin: 2rem;
+  }
+}
+.aboutme .headline {
+  font-size: 4rem;
+  width: max-content;
+  font-weight: 900;
+  margin: 2rem auto;
+  border-bottom: 5px solid black;
+}
+.aboutme :nth-child(4) {
+  margin: 0 auto;
 }
 
+.aboutme .intro {
+  padding: 2rem 0;
+  padding-right: 3rem;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.aboutme .intro span {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin: 1.5rem 0;
+}
 
+.foot {
+  font-size: 2.5rem;
+  background-color: black;
+  color: orangered;
+  text-align: center;
+  padding: 1rem 0;
+  font-weight: 900;
 
+  @include respond($bp-small) {
+    font-size: 3.5rem;
+  }
+}
 
 @media (max-width: 800px) {
   .home .box {
@@ -363,232 +322,4 @@
       border-color: orange;
     }
   }
-}
-
-@media (max-width: 800px) {
-  .aboutme {
-    height: 70vh;
-    background-image: url(../images/aboutmebg.png);
-    background-size: contain;
-    /* background-repeat: no-repeat; */
-    background-color: #ffc773e8;
-  }
-
-  .aboutme .headline {
-    font-size: 8vmin;
-    display: flex;
-    border: 0ch;
-    border-bottom: 0.5vh;
-    border-style: solid;
-    left: 10%;
-    align-items: flex-start;
-    justify-content: center;
-    position: absolute;
-    left: 28%;
-    margin-left: 22vw;
-    font-family: "Roboto Mono", monospace;
-    height: 5vh;
-    width: 45%;
-    border-bottom: 3px solid #000;
-    padding-top: 7vh;
-    /* background-color: rgba(255, 255, 255, 0.801); */
-    /* border-radius: 2vh; */
-    font-weight: 900;
-  }
-
-  .aboutme .subheading {
-    font-size: 2.3vmin;
-    display: flex;
-    font-family: "Roboto Mono", monospace;
-    left: 10%;
-    align-items: flex-start;
-    justify-content: center;
-    position: absolute;
-    text-align: center;
-    /* left: 10%; */
-    top: 110vh;
-    /* display: none; */
-    height: 6vh;
-    width: 52%;
-    margin-left: 35vw;
-    background-color: #fffff0;
-    padding-top: 2vh;
-    margin-top: 3vh;
-    border-radius: 2vh;
-    font-weight: 900;
-  }
-
-  .aboutme .intro {
-    font-family: "Roboto Mono", monospace;
-    font-size: 4vmin;
-    text-align: justify;
-    /* padding: 5vh; */
-
-    /* padding-top: 25vh; */
-    /* margin-left: 50vw; */
-    /* background-color: rgba(255, 255, 255, 0.76); */
-    font-weight: 400;
-  }
-
-  .aboutme .intro p {
-    /* background-color: #fffff0; */
-    border-radius: 2vh;
-    width: 85vw;
-    position: absolute;
-    left: 2vmin;
-    margin-top: 10vmin;
-    /* height: 60vh; */
-    font-weight: 900;
-    /* background-color: #ffbd59cc; */
-    /* padding: 2vh; */
-  }
-  .foot {
-    background-color: black;
-    height: 7vh;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Roboto Mono", monospace;
-    font-size: 4vmin;
-  }
-}
-
-@media (max-width: 800px) {
-  .getconnected {
-    /* background-color: aqua; */
-    height: 70vh;
-    margin-top: 10vmin;
-    /* align-items: center; */
-  }
-
-  .getconnected .headline {
-    font-size: 8vmin;
-    display: flex;
-    border: 0ch;
-    border-bottom: 0.5vh;
-    border-style: solid;
-    left: 10%;
-    align-items: flex-start;
-    justify-content: center;
-    position: absolute;
-    left: 22%;
-    height: 6vh;
-    width: 55%;
-    border-bottom: 3px solid #000;
-  }
-
-  .getconnected .subheading {
-    font-size: 3vmin;
-    display: flex;
-    font-family: "Roboto Mono", monospace;
-    left: 10%;
-    align-items: flex-start;
-    justify-content: center;
-    position: absolute;
-    text-align: center;
-    /* left: 10%; */
-    top: 185vh;
-    height: 6vh;
-    width: 80%;
-    font-weight: 900;
-    /* display: none; */
-  }
-
-  .getconnected .socials .socialbox .social {
-    width: 15vmin;
-    height: 15vmin;
-  }
-
-  .getconnected .socials {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 1vh;
-    justify-content: center;
-    padding-top: 40vmin;
-  }
-
-  .getconnected .socials .socialbox {
-    display: block;
-    text-align: center;
-    justify-content: center;
-    background-color: aliceblue;
-    width: 30vmin;
-    height: 25vmin;
-    margin: 5vmin;
-    /* margin-top: 32vmin; */
-    margin-right: 10vmin;
-    padding: 2vmin;
-    border-radius: 2vh;
-    box-shadow: 5vmin 5vmin rgba(68, 168, 255, 0.493);
-  }
-
-  .getconnected .socials .socialbox p {
-    font-family: "Roboto Mono", monospace;
-    font-weight: bolder;
-    font-size: 5vmin;
-    padding: 3vmin;
-  }
-
-  .getconnected .socials .socialbox p:hover {
-    font-family: "Roboto Mono", monospace;
-    font-weight: bolder;
-    font-size: 5vh;
-    padding: 1vmin;
-    border: 0vh;
-    border-bottom: 0.3vh;
-    border-color: orangered;
-    border-style: solid;
-    cursor: pointer;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {
-    display: none;
-  }
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
-  .topnav.responsive {
-    /* position: relative; */
-    display: block;
-    position: fixed;
-    right: 2vmin;
-    background-color: white;
-  }
-  .topnav a {
-    font-size: 7vmin;
-  }
-  .topnav i {
-    font-size: 7vmin;
-  }
-  .topnav.responsive a.icon {
-    position: absolute;
-    font-size: 7vmin;
-    right: 2vmin;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-
-    display: block;
-    text-align: left;
-    font-size: 7vmin;
-  }
-}
-
-.topnav a.active {
-  background-color: #04aa6d;
-  color: white;
-}
-
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-  display: none;
 }

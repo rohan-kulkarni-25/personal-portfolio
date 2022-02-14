@@ -16,7 +16,7 @@ html {
 $bp-largest: 96em; // 1200px
 $bp-large: 80em; // 1100px
 $bp-medium: 65.875em; // 900px
-$bp-small:55em; // 600px
+$bp-small: 55em; // 600px
 $bp-smallest: 40em; // 500px
 @mixin respond($breakpoint) {
   @media only screen and (min-width: $breakpoint) {
@@ -57,4 +57,23 @@ $bp-smallest: 40em; // 500px
     background-color: yellow;
     border-radius: 100%;
   }
+}
+
+.subheading {
+  font-size: 2.4rem;
+  padding: 1rem 2rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  font-weight: 900;
+}
+.heading {
+  display: block;
+  margin: 0 auto;
+  width: max-content ;
+  padding: 0 3rem;
+  font-size: 8vh;
+  border-bottom: 0.5vh;
+  font-family: "Dancing Script", cursive;
+  border-bottom: 3px solid #000;
+  font-weight: 900;
 }
