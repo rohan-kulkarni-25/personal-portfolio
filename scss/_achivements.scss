@@ -1,0 +1,220 @@
+.topbox {
+  padding-top: 8rem;
+  background-color: #ffc63a;
+  border: #000;
+}
+
+.achivements {
+  height: fit-content;
+}
+
+.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background: #000000;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.container {
+  padding: 15px 30px;
+  position: relative;
+  background: inherit;
+  width: 50%;
+}
+
+.container.left {
+  left: 0;
+}
+
+.container.right {
+  left: 50%;
+}
+
+.container::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: calc(50% - 8px);
+  right: -8px;
+  background: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.container.right::after {
+  left: -8px;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  top: calc(50% - 1px);
+  right: 8px;
+  background: #000000;
+  z-index: 1;
+}
+
+.container.right::before {
+  left: 8px;
+}
+
+.container .date {
+  position: absolute;
+  display: inline-block;
+  top: calc(50% - 15px);
+  text-align: center;
+  font-size: 3vmin;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 1;
+}
+
+.container.left .date {
+  right: -75px;
+}
+
+.container.right .date {
+  left: -75px;
+}
+
+.container .icon {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 9px 0;
+  top: calc(50% - 20px);
+  background: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: #000000;
+  z-index: 1;
+}
+
+.container.left .icon {
+  right: 56px;
+}
+
+.container.right .icon {
+  left: 56px;
+}
+
+.container .content {
+  padding: 30px 90px 30px 30px;
+  background: #ccccff;
+  position: relative;
+  border-radius: 0 500px 500px 0;
+}
+
+.container.right .content {
+  padding: 30px 30px 30px 90px;
+  border-radius: 500px 0 0 500px;
+}
+
+.container .content h2 {
+  margin: 0 0 10px 0;
+  font-size: 5vmin;
+
+  font-weight: normal;
+  color: #000000;
+}
+
+.container .content p {
+  margin: 0;
+  font-size: 3.5vmin;
+  line-height: 22px;
+  color: #000000;
+}
+
+@media (max-width: 600px) {
+  .timeline::after {
+    left: 30px;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 10px;
+  }
+
+  .container.right {
+    left: 0%;
+  }
+
+  .container.left::after,
+  .container.right::after {
+    left: 22px;
+  }
+
+  .container.left::before,
+  .container.right::before {
+    left: 38px;
+    border-color: transparent #000000 transparent transparent;
+  }
+
+  .container.left .date,
+  .container.right .date {
+    right: auto;
+    left: 35px;
+    top: calc(50% - 35px);
+  }
+
+  .container.left .icon,
+  .container.right .icon {
+    right: auto;
+    left: 85px;
+    width: 20px;
+    height: 5px;
+    top: calc(50% - 12px);
+  }
+
+  .container.left .content,
+  .container.right .content {
+    padding: 5px 0px 0px 30px;
+    border-radius: 3vmin;
+    height: fit-content;
+  }
+
+  .container .content h2 {
+    margin: 0 0 20px 0;
+    margin-left: 2vmin;
+    font-size: 6vmin;
+    font-weight: normal;
+    color: #000000;
+    margin-top: 2vmin;
+  }
+
+  .container .content p {
+    margin: 0;
+    font-size: 4vmin;
+    line-height: 22px;
+    padding-left: 4vmin;
+    padding-bottom: 2vmin;
+    padding-right: 2vmin;
+    padding-top: 0%;
+    color: #000000;
+  }
+  .achivements {
+    height: fit-content;
+  }
+}

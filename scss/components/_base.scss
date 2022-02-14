@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+body,
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Roboto Mono", monospace;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+// Screen Break Point
+$bp-largest: 96em; // 1200px
+$bp-large: 80em; // 1100px
+$bp-medium: 65.875em; // 900px
+$bp-small: 55em; // 600px
+$bp-smallest: 40em; // 500px
+@mixin respond($breakpoint) {
+  @media only screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
+.no-scroll {
+  overflow: hidden;
+}
+//  Animated Circle
+.animatedCircle {
+  height: 4rem;
+  width: 4rem;
+  animation: stretch 4s ease-out alternate running infinite;
+}
+
+// Reset Links
+@mixin resetLinks {
+  a:visited,
+  a:link {
+    text-decoration: none;
+  }
+}
+
+.subheading {
+  font-size: 2.4rem;
+  padding: 1rem 2rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  font-weight: 900;
+}
+.heading {
+  display: block;
+  margin: 0 auto;
+  width: max-content;
+  padding: 0 3rem;
+  font-size: 8vh;
+  border-bottom: 0.5vh;
+  font-family: "Dancing Script", cursive;
+  border-bottom: 3px solid #000;
+  font-weight: 900;
+}

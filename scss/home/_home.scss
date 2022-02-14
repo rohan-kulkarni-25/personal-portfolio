@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+.home .box {
+  margin-top: 14rem;
+  margin-bottom: 4.5vmax;
+  background-color: aliceblue;
+  height: 75vh;
+  width: 80vw;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 2vw;
+  border: 0.1vh;
+  border-style: solid;
+  box-shadow: 2vh 2vh rgba(68, 168, 255, 0.144);
+  font-family: "Roboto Mono", monospace;
+}
+
+.home {
+  height: 90vh;
+  padding-top: 2vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.home .box .myself {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50vh;
+}
+
+.home .box .box2 {
+  background-color: rgb(240, 248, 192);
+  box-shadow: 2vh 2vh rgba(240, 248, 192, 0.61);
+  height: 25%;
+  width: 60%;
+  border: 0.1vh;
+  border-style: solid;
+  margin: 5vw;
+  align-items: center;
+  display: flex;
+  border-radius: 2vw;
+  justify-content: center;
+  font-size: 6vh;
+}
+
+.home .box .box2 p {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap;
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 4.5s steps(30, end), blink-caret 0.75s step-end infinite;
+  /* animation-iteration-count: infinite; */
+  font-size: 4vh;
+  font-weight: 900;
+}
+
+@media (max-width: 800px) {
+  .home .box {
+    margin-bottom: 4.5vmax;
+    background-color: aliceblue;
+    height: 65vh;
+    width: 80vw;
+    align-items: center;
+    display: block;
+    justify-content: center;
+    border-radius: 2vw;
+    border: 0.1vh;
+    border-style: solid;
+    box-shadow: 2vh 2vh rgba(68, 168, 255, 0.144);
+    font-family: "Roboto Mono", monospace;
+  }
+
+  .home {
+    height: 90vh;
+    padding-top: 2vh;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .home .box .myself {
+    width: 60vmin;
+    /* padding-top: 20vmin; */
+    margin-top: 5vmin;
+    height: 60vmin;
+    text-align: center;
+    justify-content: center;
+    border-radius: 100vmin;
+  }
+
+  .home .box .box2 {
+    background-color: rgb(240, 248, 192);
+    box-shadow: 2vh 2vh rgba(240, 248, 192, 0.61);
+    height: 25%;
+    width: 90%;
+    border: 0.1vh;
+    border-style: solid;
+    margin: 5vmin;
+    align-items: center;
+    display: flex;
+    border-radius: 2vw;
+    justify-content: center;
+    font-size: 6vmin;
+  }
+
+  .home .box .box2 p {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid orange; /* The typwriter cursor */
+    white-space: nowrap;
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.15em; /* Adjust as needed */
+    animation: typing 4.5s steps(40, end), blink-caret 0.75s step-end infinite;
+    /* animation-iteration-count: infinite; */
+    font-size: 3vmin;
+    font-weight: 900;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 70%;
+    }
+  }
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: orange;
+    }
+  }
+}

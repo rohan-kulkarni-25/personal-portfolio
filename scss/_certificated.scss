@@ -1,0 +1,160 @@
+.certificates {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.certificate {
+  width: 28vw;
+  height: 45vh;
+  margin: 3vh;
+  border: goldenrod;
+  border-style: groove;
+  border-width: 0.2vh;
+  display: flexbox;
+  /* justify-content: center; */
+  text-align: center;
+  border-radius: 1vh;
+  background-color: #fffff0;
+  box-shadow: 0.7vh 0.7vh rgba(255, 217, 0, 0.363);
+}
+
+.certificate p {
+  font-size: 3.6vh;
+  font-family: "Roboto Mono", monospace;
+  padding: 1vh;
+  text-align: left;
+  font-weight: 900;
+}
+
+.certificate .description {
+  border: 0ch;
+  border-top: 0.1vh;
+  border-bottom: 0.1vh;
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+}
+
+.certificate .description p {
+  font-size: 2vh;
+  /* font-family: "Roboto Mono", monospace; */
+  padding: 2vh;
+  font-weight: bolder;
+  color: black;
+  /* height: 15vh; */
+  height: fit-content;
+}
+
+.certificate a {
+  font-size: 4vh;
+  font-family: "Roboto Mono", monospace;
+  background-color: #ffc63a;
+  padding: 1vh;
+  color: black;
+  border-radius: 2vh;
+  text-decoration: none;
+  font-weight: 900;
+  margin-top: 20vmin;
+}
+
+.certificate a:visited {
+  font-size: 4vh;
+  font-family: "Roboto Mono", monospace;
+  background-color: #ffc63a;
+  padding: 1vh;
+  color: black;
+  border-radius: 2vh;
+  text-decoration: none;
+  /* position: fixed; */
+  font-weight: 900;
+}
+.certificate a:hover {
+  font-size: 5vh;
+  padding: 1vh;
+  border-radius: 2vh;
+  font-family: "Roboto Mono", monospace;
+  background-color: gold;
+  cursor: pointer;
+  text-decoration: none;
+  /* position: fixed; */
+  font-weight: 900;
+}
+
+@media (max-width: 600px) {
+  .certificates {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .certificate {
+    width: 90vw;
+    margin: 2vh;
+    border: goldenrod;
+    border-style: groove;
+    border-width: 0.2vh;
+    display: flexbox;
+    text-align: center;
+    border-radius: 1vh;
+    background-color: #fffff0;
+    box-shadow: 0.7vh 0.7vh rgba(255, 217, 0, 0.363);
+  }
+
+  .certificate p {
+    font-size: 6vmin;
+    font-family: "Roboto Mono", monospace;
+    padding: 1vh;
+    text-align: left;
+    font-weight: 900;
+  }
+
+  .certificate .description {
+    border: 0ch;
+    border-top: 0.1vh;
+    border-bottom: 0.1vh;
+    margin-bottom: 2vmin;
+    margin-top: 2vh;
+  }
+
+  .certificate .description p {
+    font-size: 3vmin;
+    padding: 2vmin;
+    font-weight: bolder;
+    color: black;
+    height: fit-content;
+  }
+
+  .certificate a {
+    font-size: 4vh;
+    font-family: "Roboto Mono", monospace;
+    background-color: #ffc63a;
+    padding: 1vmin;
+    color: black;
+    margin-top: 20vmin;
+    border-radius: 2vh;
+    text-decoration: none;
+    font-weight: 900;
+  }
+
+  .certificate a:visited {
+    font-size: 4vh;
+    font-family: "Roboto Mono", monospace;
+    background-color: #ffc63a;
+    padding: 1vh;
+    color: black;
+    border-radius: 2vh;
+    text-decoration: none;
+    font-weight: 900;
+  }
+  .certificate a:hover {
+    font-size: 5vh;
+    padding: 1vh;
+    border-radius: 2vh;
+    font-family: "Roboto Mono", monospace;
+    background-color: gold;
+    cursor: pointer;
+    text-decoration: none;
+    /* position: fixed; */
+    font-weight: 900;
+  }
+}
