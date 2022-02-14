@@ -1,11 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 body,
 html {
   -webkit-box-sizing: border-box;
@@ -32,6 +29,28 @@ html {
   width: 4rem;
   -webkit-animation: stretch 4s ease-out alternate running infinite;
           animation: stretch 4s ease-out alternate running infinite;
+}
+
+.subheading {
+  font-size: 2.4rem;
+  padding: 1rem 2rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  font-weight: 900;
+}
+
+.heading {
+  display: block;
+  margin: 0 auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0 3rem;
+  font-size: 8vh;
+  border-bottom: 0.5vh;
+  font-family: "Dancing Script", cursive;
+  border-bottom: 3px solid #000;
+  font-weight: 900;
 }
 
 @-webkit-keyframes stretch {
@@ -72,26 +91,42 @@ html {
   }
 }
 
-.subheading {
-  font-size: 2.4rem;
-  padding: 1rem 2rem;
-  border-radius: 1.2rem;
-  text-align: center;
-  font-weight: 900;
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
 }
 
-.heading {
-  display: block;
-  margin: 0 auto;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  padding: 0 3rem;
-  font-size: 8vh;
-  border-bottom: 0.5vh;
-  font-family: "Dancing Script", cursive;
-  border-bottom: 3px solid #000;
-  font-weight: 900;
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+/* The typewriter cursor effect */
+@-webkit-keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
 }
 
 .backOverlay {
@@ -370,169 +405,6 @@ html {
   }
 }
 
-.home .box {
-  margin-top: 14rem;
-  margin-bottom: 4.5vmax;
-  background-color: aliceblue;
-  height: 75vh;
-  width: 80vw;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-radius: 2vw;
-  border: 0.1vh;
-  border-style: solid;
-  -webkit-box-shadow: 2vh 2vh rgba(68, 168, 255, 0.144);
-          box-shadow: 2vh 2vh rgba(68, 168, 255, 0.144);
-  font-family: "Roboto Mono", monospace;
-}
-
-.home {
-  height: 90vh;
-  padding-top: 2vh;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.home .box .myself {
-  width: 15vw;
-  height: 15vw;
-  border-radius: 50vh;
-}
-
-.home .box .box2 {
-  background-color: #f0f8c0;
-  -webkit-box-shadow: 2vh 2vh rgba(240, 248, 192, 0.61);
-          box-shadow: 2vh 2vh rgba(240, 248, 192, 0.61);
-  height: 25%;
-  width: 60%;
-  border: 0.1vh;
-  border-style: solid;
-  margin: 5vw;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border-radius: 2vw;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 6vh;
-}
-
-.home .box .box2 p {
-  overflow: hidden;
-  /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid orange;
-  /* The typwriter cursor */
-  white-space: nowrap;
-  margin: 0 auto;
-  /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em;
-  /* Adjust as needed */
-  -webkit-animation: typing 4.5s steps(30, end), blink-caret 0.75s step-end infinite;
-          animation: typing 4.5s steps(30, end), blink-caret 0.75s step-end infinite;
-  /* animation-iteration-count: infinite; */
-  font-size: 4vh;
-  font-weight: 900;
-}
-
-@-webkit-keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 70%;
-  }
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 70%;
-  }
-}
-
-/* The typewriter cursor effect */
-@-webkit-keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: orange;
-  }
-}
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: orange;
-  }
-}
-
-.animbox {
-  height: 5vh;
-  width: 5vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: fixed;
-  margin: 0.5vw;
-  background-color: green;
-  -webkit-animation: rotate 1s infinite;
-          animation: rotate 1s infinite;
-}
-
-@-webkit-keyframes rotate {
-  0% {
-    rotate: 180deg;
-  }
-  50% {
-    rotate: 180deg;
-  }
-  75% {
-    rotate: 360deg;
-  }
-  100% {
-    rotate: 360deg;
-  }
-}
-
-@keyframes rotate {
-  0% {
-    rotate: 180deg;
-  }
-  50% {
-    rotate: 180deg;
-  }
-  75% {
-    rotate: 360deg;
-  }
-  100% {
-    rotate: 360deg;
-  }
-}
-
 .getconnected {
   margin-top: 10vh;
 }
@@ -632,6 +504,21 @@ html {
   }
 }
 
+.foot {
+  font-size: 2.5rem;
+  background-color: black;
+  color: orangered;
+  text-align: center;
+  padding: 1rem 0;
+  font-weight: 900;
+}
+
+@media only screen and (min-width: 55em) {
+  .foot {
+    font-size: 3.5rem;
+  }
+}
+
 .aboutme {
   background-image: url(../assets/images/aboutmebg.png);
   background-size: cover;
@@ -699,19 +586,86 @@ html {
   margin: 1.5rem 0;
 }
 
-.foot {
-  font-size: 2.5rem;
-  background-color: black;
-  color: orangered;
-  text-align: center;
-  padding: 1rem 0;
-  font-weight: 900;
+.home .box {
+  margin-top: 14rem;
+  margin-bottom: 4.5vmax;
+  background-color: aliceblue;
+  height: 75vh;
+  width: 80vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 2vw;
+  border: 0.1vh;
+  border-style: solid;
+  -webkit-box-shadow: 2vh 2vh rgba(68, 168, 255, 0.144);
+          box-shadow: 2vh 2vh rgba(68, 168, 255, 0.144);
+  font-family: "Roboto Mono", monospace;
 }
 
-@media only screen and (min-width: 55em) {
-  .foot {
-    font-size: 3.5rem;
-  }
+.home {
+  height: 90vh;
+  padding-top: 2vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home .box .myself {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50vh;
+}
+
+.home .box .box2 {
+  background-color: #f0f8c0;
+  -webkit-box-shadow: 2vh 2vh rgba(240, 248, 192, 0.61);
+          box-shadow: 2vh 2vh rgba(240, 248, 192, 0.61);
+  height: 25%;
+  width: 60%;
+  border: 0.1vh;
+  border-style: solid;
+  margin: 5vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 2vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 6vh;
+}
+
+.home .box .box2 p {
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em;
+  /* Adjust as needed */
+  -webkit-animation: typing 4.5s steps(30, end), blink-caret 0.75s step-end infinite;
+          animation: typing 4.5s steps(30, end), blink-caret 0.75s step-end infinite;
+  /* animation-iteration-count: infinite; */
+  font-size: 4vh;
+  font-weight: 900;
 }
 
 @media (max-width: 800px) {
@@ -845,7 +799,6 @@ html {
   height: fit-content;
 }
 
-/* background: #ccccff; */
 .timeline {
   position: relative;
   width: 100%;
@@ -1045,7 +998,6 @@ html {
     color: #000000;
   }
   .achivements {
-    /* background-color: skyblue; */
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -1154,13 +1106,11 @@ html {
   }
   .certificate {
     width: 90vw;
-    /* height: fit-content; */
     margin: 2vh;
     border: goldenrod;
     border-style: groove;
     border-width: 0.2vh;
     display: flexbox;
-    /* justify-content: center; */
     text-align: center;
     border-radius: 1vh;
     background-color: #fffff0;
@@ -1183,7 +1133,6 @@ html {
   }
   .certificate .description p {
     font-size: 3vmin;
-    /* font-family: "Roboto Mono", monospace; */
     padding: 2vmin;
     font-weight: bolder;
     color: black;
@@ -1199,7 +1148,6 @@ html {
     color: black;
     margin-top: 20vmin;
     border-radius: 2vh;
-    /* position: absolute; */
     text-decoration: none;
     font-weight: 900;
   }
@@ -1211,7 +1159,6 @@ html {
     color: black;
     border-radius: 2vh;
     text-decoration: none;
-    /* position: fixed; */
     font-weight: 900;
   }
   .certificate a:hover {

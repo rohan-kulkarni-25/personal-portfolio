@@ -1,0 +1,36 @@
+//  Key Frames
+@keyframes stretch {
+  0% {
+    transform: scale(0.3);
+    background-color: red;
+    border-radius: 100%;
+  }
+  50% {
+    background-color: orange;
+    border-radius: 100%;
+  }
+  100% {
+    transform: scale(1);
+    background-color: yellow;
+    border-radius: 100%;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}

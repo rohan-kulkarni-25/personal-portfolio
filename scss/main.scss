@@ -1,5 +1,9 @@
-@import "base";
-@import "header";
-@import "home";
+@import "./components/base";
+@import "./components/animation";
+@import "./components/header";
+@import "./components/connected";
+@import "./components/footer";
+@import "./home/about";
+@import "./home/home";
 @import "achivements";
 @import "certificated";

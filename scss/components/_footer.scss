@@ -1,0 +1,12 @@
+.foot {
+  font-size: 2.5rem;
+  background-color: black;
+  color: orangered;
+  text-align: center;
+  padding: 1rem 0;
+  font-weight: 900;
+
+  @include respond($bp-small) {
+    font-size: 3.5rem;
+  }
+}

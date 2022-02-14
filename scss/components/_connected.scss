@@ -1,0 +1,68 @@
+.getconnected {
+  margin-top: 10vh;
+  & .headline {
+    font-size: 5vh;
+    width: max-content;
+    margin: 0 auto;
+    border-bottom: 3px solid #000;
+  }
+
+  & .subheading {
+    font-size: 3.55rem;
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    margin: 2rem 0;
+    padding: 0;
+  }
+  & .socials {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+  & .socials .socialbox {
+    transition: all 300ms ease-out;
+    padding: 1rem 2rem;
+    max-width: 20vw;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5.5px);
+    border-radius: 1rem;
+    border: 3px solid rgba(255, 255, 255, 0.18);
+    &:hover {
+      transform: translateY(-0.5rem);
+    }
+    &:active {
+      transform: translateY(0rem);
+    }
+  }
+  & .socialbox .social {
+    width: 4rem;
+    height: 4rem;
+
+    @include respond($bp-smallest) {
+      width: 7rem;
+      height: 7rem;
+    }
+  }
+
+  & .socials .socialbox a:visited,
+  & .socials .socialbox a:link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    font-family: "Roboto Mono", monospace;
+    font-weight: bolder;
+    font-size: 3vh;
+    text-decoration: none;
+    color: #000;
+    & p {
+      display: none;
+      @include respond($bp-small) {
+        display: block;
+      }
+    }
+  }
+}
