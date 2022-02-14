@@ -1,0 +1,60 @@
+body,
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Roboto Mono", monospace;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+// Screen Break Point
+$bp-largest: 96em; // 1200px
+$bp-large: 80em; // 1100px
+$bp-medium: 65.875em; // 900px
+$bp-small:55em; // 600px
+$bp-smallest: 40em; // 500px
+@mixin respond($breakpoint) {
+  @media only screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
+.no-scroll {
+  overflow: hidden;
+}
+//  Animated Circle
+.animatedCircle {
+  height: 4rem;
+  width: 4rem;
+  animation: stretch 4s ease-out alternate running infinite;
+}
+
+// Reset Links
+@mixin resetLinks {
+  a:visited,
+  a:link {
+    text-decoration: none;
+  }
+}
+
+//  Key Frames
+@keyframes stretch {
+  0% {
+    transform: scale(0.3);
+    background-color: red;
+    border-radius: 100%;
+  }
+  50% {
+    background-color: orange;
+    border-radius: 100%;
+  }
+  100% {
+    transform: scale(1);
+    background-color: yellow;
+    border-radius: 100%;
+  }
+}
