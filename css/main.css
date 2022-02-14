@@ -243,7 +243,7 @@ html {
 .header__nav a:link,
 .header__nav a:visited {
   text-decoration: none;
-  color: black;
+  color: #0000ee;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
