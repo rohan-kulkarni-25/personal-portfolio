@@ -534,9 +534,7 @@ html {
 }
 
 .getconnected {
-  /* background-color: aqua; */
   margin-top: 10vh;
-  /* align-items: center; */
 }
 
 .getconnected .headline {
@@ -568,16 +566,6 @@ html {
 }
 
 .getconnected .socials .socialbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 1rem;
   -webkit-transition: all 300ms ease-out;
   transition: all 300ms ease-out;
   padding: 1rem 2rem;
@@ -591,35 +579,6 @@ html {
   border: 3px solid rgba(255, 255, 255, 0.18);
 }
 
-.getconnected .socials .socialbox .social {
-  width: 4rem;
-  height: 4rem;
-}
-
-@media only screen and (min-width: 40em) {
-  .getconnected .socials .socialbox .social {
-    width: 7rem;
-    height: 7rem;
-  }
-}
-
-.getconnected .socials .socialbox a:visited,
-.getconnected .socials .socialbox a:link {
-  display: none;
-  font-family: "Roboto Mono", monospace;
-  font-weight: bolder;
-  font-size: 3vh;
-  text-decoration: none;
-  color: #000;
-}
-
-@media only screen and (min-width: 55em) {
-  .getconnected .socials .socialbox a:visited,
-  .getconnected .socials .socialbox a:link {
-    display: block;
-  }
-}
-
 .getconnected .socials .socialbox:hover {
   -webkit-transform: translateY(-0.5rem);
           transform: translateY(-0.5rem);
@@ -628,6 +587,49 @@ html {
 .getconnected .socials .socialbox:active {
   -webkit-transform: translateY(0rem);
           transform: translateY(0rem);
+}
+
+.getconnected .socialbox .social {
+  width: 4rem;
+  height: 4rem;
+}
+
+@media only screen and (min-width: 40em) {
+  .getconnected .socialbox .social {
+    width: 7rem;
+    height: 7rem;
+  }
+}
+
+.getconnected .socials .socialbox a:visited,
+.getconnected .socials .socialbox a:link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  font-family: "Roboto Mono", monospace;
+  font-weight: bolder;
+  font-size: 3vh;
+  text-decoration: none;
+  color: #000;
+}
+
+.getconnected .socials .socialbox a:visited p,
+.getconnected .socials .socialbox a:link p {
+  display: none;
+}
+
+@media only screen and (min-width: 55em) {
+  .getconnected .socials .socialbox a:visited p,
+  .getconnected .socials .socialbox a:link p {
+    display: block;
+  }
 }
 
 .aboutme {
